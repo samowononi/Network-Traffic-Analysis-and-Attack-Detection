@@ -85,38 +85,40 @@ File retrieval request and response.
 
 ### **Recommendations**
 
-1. **Stronger Password Policies**  
-   - Enforce complex password requirements (e.g., minimum length of 8, special characters).  
-2. **Monitoring and Logging**  
-   - Regularly review logs for unusual patterns like repeated failed login attempts.  
-3. **Two-Factor Authentication (2FA)**  
-   - Add an additional layer of security to prevent unauthorized access.  
-4. **Data Encryption**  
-   - Encrypt sensitive documents to protect their content even if unauthorized access occurs.
+1. **Stronger Password Policies:** Enforce complex password requirements (e.g., minimum length of 8, special characters).  
+2. **Monitoring and Logging:** Regularly review logs for unusual patterns like repeated failed login attempts.  
+3. **Two-Factor Authentication (2FA):** Add an additional layer of security to prevent unauthorized access.  
+4. **Data Encryption:** Encrypt sensitive documents to protect their content even if unauthorized access occurs.
 
 ---
 
 ### **Additional Notes**
-Using the Export FTP-DATA Object List, there are two more files on the packets.
+Using the Export FTP-DATA Object List, there are two more files on the analyzed network traffic.
 <img width="557" alt="Screenshot 2025-01-17 193844" src="https://github.com/user-attachments/assets/76690a22-a368-43ab-b363-c1b761b0bb74" />
 
 
 - **Other Files on the Server**:  
   
   1. `1.png`: An image of a skull and crossbones in white color.
-  
-  <img width="790" alt="Screenshot 2025-01-17 191811" src="https://github.com/user-attachments/assets/92b762d1-6379-47d0-8559-f675e826ea9e" />
+
+  ![1](https://github.com/user-attachments/assets/ec2484cb-3e56-44b0-9bea-2aacc1fa98c9)
+  ![Screenshot 2025-01-17 191811](https://github.com/user-attachments/assets/57f3f8bb-eaf8-4926-b3a4-32a13c8ca0e9)
+
+
     
   2. `memo`: Contains the text, "this is a memo to remind all users not to share their passwords."
-  
+ 
+  <img width="433" alt="Screenshot 2025-01-17 195320" src="https://github.com/user-attachments/assets/cf79ee8e-c5d3-40c8-88a9-c7f6119f3ac7" />
+
   <img width="789" alt="Screenshot 2025-01-17 191942" src="https://github.com/user-attachments/assets/6b668b90-1d24-4da8-a9e1-682eedd20da6" />
+  
 
  
   
 - **Content of `Confidential Information.doc`**:  
   - "This file contains confidential information and should not be distributed."
-
-**Screenshot Placeholder**: Details of other files and their content as displayed in Wireshark.
+ 
+  <img width="461" alt="Screenshot 2025-01-17 195547" src="https://github.com/user-attachments/assets/5658a226-b0ef-44d6-865e-12c198799ddc" />
 
 ---
 
