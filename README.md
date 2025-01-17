@@ -1,11 +1,11 @@
-# **Network Traffic Analysis: Unauthorized Access and Data Exfiltration**
+# **Network Traffic Analysis and Attack Detection**
 
 ## **Overview**  
 This analysis investigates an unauthorized access attempt and subsequent data exfiltration captured in a network packet analysis using Wireshark. The incident involves a brute-force attack to gain unauthorized server access and the retrieval of sensitive data.
 
 ---
 
-## **The Analysis**
+## **Capture 1: Unauthorized Access and Data Exfiltration**
 
 ### **Timeline of Events**
 
