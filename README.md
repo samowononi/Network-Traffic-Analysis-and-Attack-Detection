@@ -1,4 +1,4 @@
-![Network Traffic Analysis and Attack Detection](https://github.com/user-attachments/assets/c8d69752-8cee-470a-a427-bc3091a5ae90)
+![Network Traffic Analysis and Attack Detection](https://github.com/user-attachments/assets/192e4f32-318e-4b87-afde-eac2e1d97cbc)
 
 
 # **Network Traffic Analysis and Attack Detection**
