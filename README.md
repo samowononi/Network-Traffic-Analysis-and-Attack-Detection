@@ -87,3 +87,77 @@ This analysis investigates an unauthorized access attempt and subsequent data ex
 
 ## **Conclusion**  
 This analysis highlights the critical importance of proactive security measures, such as password management, activity monitoring, and data encryption, in safeguarding sensitive information against unauthorized access and potential breaches.
+
+
+
+
+# **Capture 2: Potential Denial-of-Service (DoS) and Brute-Force Attack**
+
+## **Overview**  
+This analysis focuses on identifying and documenting a potential DoS attack and brute-force password cracking attempt captured in a network packet analysis.
+
+---
+
+## **Capture 2: Potential Denial-of-Service (DoS) and Brute-Force Attack**
+
+### **Timeline of Events**
+
+#### **Step 1: Potential DoS Attack**  
+- **Packet Range**: [32 - 88]  
+- **Details**:  
+  - The attacker (`192.168.56.1`) initiates a potential **SYN flood attack** (half-open attack) against the target (`192.168.56.102`).  
+  - SYN packets are sent in rapid succession, overwhelming the target system with incomplete connection requests, a common tactic in DoS attacks.
+
+**Screenshot Placeholder**: SYN flood packets as displayed in Wireshark.  
+
+---
+
+#### **Step 2: Brute-Force Password Cracking**  
+- **Packet Range**: [138 - 81188]  
+- **Details**:  
+  - The attacker continues their malicious activity with a **brute-force attack** against the target server.  
+  - Numerous password attempts are made systematically to gain unauthorized access.  
+  - Example passwords captured in the data include:  
+    - **First 3**: `eeeeeeee`, `eeeeeeei`, `eeeeeeeo`  
+    - **Last 3**: `eeeeeESU`, `eeeeeESm`, `eeeeeESM`
+
+**Screenshot Placeholder**: Brute-force password attempts shown in Wireshark.
+
+---
+
+### **Findings**  
+
+1. **Denial-of-Service (DoS) Activity**  
+   - The SYN flood attack observed in this capture is an attempt to overwhelm the target server's resources with incomplete TCP connections.  
+
+2. **Brute-Force Password Attack**  
+   - The attacker systematically attempts various passwords in an attempt to gain unauthorized access to the target server.  
+
+**Screenshot Placeholder**: Summary of findings in Wireshark (e.g., filtered views of DoS and brute-force attack patterns).
+
+---
+
+### **Recommendations**  
+
+1. **Mitigation of DoS Attacks**  
+   - Implement mechanisms to detect and mitigate DoS attacks, such as:  
+     - Rate limiting for incoming connection requests.  
+     - SYN cookies to handle half-open connections more effectively.  
+     - Traffic filtering to block malicious IPs.  
+
+2. **Enhanced Password Policies**  
+   - Enforce strong password requirements, including:  
+     - Minimum length (e.g., 12+ characters).  
+     - Complexity (e.g., mix of uppercase, lowercase, numbers, and special characters).  
+     - Account lockout after a limited number of failed login attempts.  
+
+3. **Two-Factor Authentication (2FA)**  
+   - Add 2FA for all login mechanisms to enhance security against brute-force attacks.  
+
+---
+
+## **Conclusion**  
+This analysis highlights the significance of robust defenses against DoS and brute-force attacks, including preventive measures such as rate limiting, password policy enforcement, and multi-factor authentication.  
+
+**Screenshot Placeholder**: Include relevant screenshots from Wireshark showing the SYN flood and brute-force patterns.  
+
