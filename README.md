@@ -1,7 +1,13 @@
 # **Network Traffic Analysis and Attack Detection**
 
 ## **Overview**  
-This analysis investigates an unauthorized access attempt and subsequent data exfiltration captured in a network packet analysis using Wireshark. The incident involves a brute-force attack to gain unauthorized server access and the retrieval of sensitive data.
+
+This project demonstrates the identification and documentation of malicious network activity using packet capture (PCAP) files and Wireshark. This analysis investigates two separate captures highlighting distinct attack scenarios, providing insights into the methods employed by attackers and the necessary defenses to counteract such threats.  
+
+- **Capture 1** focuses on **unauthorized access and data exfiltration**, where an attacker employs brute-force techniques to compromise credentials and retrieve a sensitive document from the target server.  
+- **Capture 2** delves into a **potential Denial-of-Service (DoS) attack** and a **brute-force password cracking attempt**, showcasing how attackers attempt to disrupt services and gain unauthorized access to critical systems.   
+
+This project shows the importance of network monitoring and traffic analysis in detecting and responding to cyber threats and also serves as a practical demonstration of applying cybersecurity principles to real-world scenarios.
 
 ---
 
@@ -89,7 +95,8 @@ This analysis investigates an unauthorized access attempt and subsequent data ex
 This analysis highlights the critical importance of proactive security measures, such as password management, activity monitoring, and data encryption, in safeguarding sensitive information against unauthorized access and potential breaches.
 
 
-
+---
+---
 
 # **Capture 2: Potential Denial-of-Service (DoS) and Brute-Force Attack**
 
@@ -98,7 +105,6 @@ This analysis focuses on identifying and documenting a potential DoS attack and 
 
 ---
 
-## **Capture 2: Potential Denial-of-Service (DoS) and Brute-Force Attack**
 
 ### **Timeline of Events**
 
