@@ -35,7 +35,7 @@ Successful login and file upload captured in Wireshark.
 #### **Step 2: Suspicious Activity Initiation**
 - **Packet Range**: [86 - 100]  
 - **Details**: Approximately 15.5 seconds later, a TCP connection attempt originates from a different IP address (`192.168.56.1`).  
-- The connection succeeds, but immediately the server logs a **500 Internal Server Error** and prompts for login credentials.
+- The connection succeeds, but immediately, the server logs a **500 Internal Server Error** and prompts for login credentials.
 
 <img width="791" alt="Screenshot 2025-01-17 182847" src="https://github.com/user-attachments/assets/44604ead-f61d-469f-a9b7-640386cf6206" />
 
@@ -48,9 +48,16 @@ TCP connection attempt from `192.168.56.1` and server error log.
 - **Details**: The user (`192.168.56.1`) initiates a **password brute-force attack** over a period of 42.11 minutes, attempting numerous passwords using a dictionary list.  
   - **First 3 Passwords**: `aaa`, `abc`, `academia`  
   - **Last 3 Passwords**: `root`, `backup`, `cmpsem055`  
-- The attack successfully retrieves the correct password, `cmpsem055`.
+- The attack was successfull with the correct password, `cmpsem055`.
 
-**Screenshot Placeholder**: Brute-force attempts and successful login.
+<img width="789" alt="Screenshot 2025-01-17 183752" src="https://github.com/user-attachments/assets/13a1baf3-1d8c-41f1-b4e1-c85984031fdf" />
+
+Start of Brute-force attack.
+<br>
+
+<img width="788" alt="Screenshot 2025-01-17 184531" src="https://github.com/user-attachments/assets/cee9116c-9414-4efc-85dd-6ea80721f6f1" />
+
+Successful login.
 
 ---
 
