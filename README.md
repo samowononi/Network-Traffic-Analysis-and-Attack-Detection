@@ -1,3 +1,7 @@
+![Network Traffic Analysis and Attack Detection](https://github.com/user-attachments/assets/c1fd036e-65f7-4136-a2f8-634d0ee1066b)
+
+
+
 # **Network Traffic Analysis and Attack Detection**
 
 ## **Overview**  
@@ -16,22 +20,26 @@ This project shows the importance of network monitoring and traffic analysis in 
 ### **Timeline of Events**
 
 #### **Step 1: Legitimate User Activity**
-- **Packet Range**: [10, 71]  
+- **Packet Range**: [10 - 71]  
 - **Details**: A legitimate user (`192.168.56.102`) successfully logs into the server (`192.168.56.101`) via FTP using the credentials:  
   - **Username**: `ftpuser`  
   - **Password**: `cmpsem055`  
 - The user uploads a file named `Confidential Information.doc`.
 
-**Screenshot Placeholder**: Successful login and file upload captured in Wireshark.
+<img width="787" alt="Screenshot 2025-01-17 182112" src="https://github.com/user-attachments/assets/11075e3d-ee10-465e-8bc6-a4dac3bd5400" />
+
+Successful login and file upload captured in Wireshark.
 
 ---
 
 #### **Step 2: Suspicious Activity Initiation**
-- **Packet**: [86]  
+- **Packet Range**: [86 - 100]  
 - **Details**: Approximately 15.5 seconds later, a TCP connection attempt originates from a different IP address (`192.168.56.1`).  
-- The connection succeeds, but the server logs a **500 Internal Server Error** and prompts for login credentials.
+- The connection succeeds, but immediately the server logs a **500 Internal Server Error** and prompts for login credentials.
 
-**Screenshot Placeholder**: TCP connection attempt from `192.168.56.1` and server error log.
+<img width="791" alt="Screenshot 2025-01-17 182847" src="https://github.com/user-attachments/assets/44604ead-f61d-469f-a9b7-640386cf6206" />
+
+TCP connection attempt from `192.168.56.1` and server error log.
 
 ---
 
