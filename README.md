@@ -99,7 +99,7 @@ Using the Export FTP-DATA Object List, there are two more files on the analyzed 
 
 - **Other Files on the Server**:  
   
-  1. `1.png`: An image of a skull and crossbones in white color.
+  1. `1.png`: A png image of a skull and crossbones in white color.
 
   ![1](https://github.com/user-attachments/assets/ec2484cb-3e56-44b0-9bea-2aacc1fa98c9)
   ![Screenshot 2025-01-17 191811](https://github.com/user-attachments/assets/57f3f8bb-eaf8-4926-b3a4-32a13c8ca0e9)
