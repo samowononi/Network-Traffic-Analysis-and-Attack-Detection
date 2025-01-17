@@ -66,25 +66,27 @@ Successful login.
 - **Details**: After gaining access, the attacker navigates to the directory containing the confidential document.  
   - **Request**: `RETR Confidential Information.doc`  
   - **Response**: `226 File send OK.`  
-- The attacker successfully downloads the file.
+- The attacker successfully retrieves the file.
 
-**Screenshot Placeholder**: File retrieval request and response.
+<img width="791" alt="Screenshot 2025-01-17 185509" src="https://github.com/user-attachments/assets/fb617981-91dd-4d44-9b5f-4b652f044319" />
+
+File retrieval request and response.
 
 ---
 
 ### **Findings**
-1. The capture reveals a **potential unauthorized access** and **data exfiltration attempt**.  
-2. The attacker employs a **brute-force attack** to bypass authentication mechanisms.  
+1. The capture reveals an **unauthorized access** and **data exfiltration attempt**.  
+2. The attacker employs a **brute-force attack** to bypass authentication mechanisms. 
 3. The sensitive document `Confidential Information.doc` is successfully retrieved, as it was not encrypted.
+4. The FTP protocol sends credentials (USER and PASS) in plaintext, which makes it vulnerable to interception.
 
-**Screenshot Placeholder**: Summary of findings in Wireshark (e.g., filtered view of key events).
 
 ---
 
 ### **Recommendations**
 
 1. **Stronger Password Policies**  
-   - Enforce complex password requirements (e.g., minimum length, special characters).  
+   - Enforce complex password requirements (e.g., minimum length of 8, special characters).  
 2. **Monitoring and Logging**  
    - Regularly review logs for unusual patterns like repeated failed login attempts.  
 3. **Two-Factor Authentication (2FA)**  
@@ -95,10 +97,22 @@ Successful login.
 ---
 
 ### **Additional Notes**
+Using the Export FTP-DATA Object List, there are two more files on the packets.
+<img width="557" alt="Screenshot 2025-01-17 193844" src="https://github.com/user-attachments/assets/76690a22-a368-43ab-b363-c1b761b0bb74" />
+
 
 - **Other Files on the Server**:  
-  - `memo`: Contains the text, "this is a memo to remind all users not to share their passwords."  
-  - `1.png`: An image of a skull and crossbones in white color.  
+  
+  1. `1.png`: An image of a skull and crossbones in white color.
+  
+  <img width="790" alt="Screenshot 2025-01-17 191811" src="https://github.com/user-attachments/assets/92b762d1-6379-47d0-8559-f675e826ea9e" />
+    
+  2. `memo`: Contains the text, "this is a memo to remind all users not to share their passwords."
+  
+  <img width="789" alt="Screenshot 2025-01-17 191942" src="https://github.com/user-attachments/assets/6b668b90-1d24-4da8-a9e1-682eedd20da6" />
+
+ 
+  
 - **Content of `Confidential Information.doc`**:  
   - "This file contains confidential information and should not be distributed."
 
