@@ -13,6 +13,16 @@ This project demonstrates the identification and documentation of malicious netw
 This project shows the importance of network monitoring and traffic analysis in detecting and responding to cyber threats and also serves as a practical demonstration of applying cybersecurity principles to real-world scenarios.
 
 ---
+## **Skills Learned**
+
+Through the analysis of Capture 1 and Capture 2, I gained hands-on experience in:  
+
+- **Network Traffic Analysis**: Interpreting packet capture data using Wireshark to identify patterns, anomalies, and potential attack vectors.  
+- **Incident Investigation**: Tracing attack timelines, understanding attacker behaviors, and documenting findings systematically.  
+- **Brute-Force and DoS Detection**: Identifying brute-force password attempts and SYN flood attacks, and understanding their impact on network resources.  
+- **Technical Documentation**: Structuring and presenting cybersecurity findings in a professional format, suitable for inclusion in a portfolio or report.  
+
+---
 
 ## **Capture 1: Unauthorized Access and Data Exfiltration**
 
