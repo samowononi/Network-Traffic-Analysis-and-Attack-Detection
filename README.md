@@ -91,7 +91,7 @@ File retrieval request and response.
 
 ---
 
-### **Additional Notes**
+### **Additional Findings**
 Using the Export FTP-DATA Object List, there are two more files on the analyzed network traffic.
 <img width="557" alt="Screenshot 2025-01-17 193844" src="https://github.com/user-attachments/assets/76690a22-a368-43ab-b363-c1b761b0bb74" />
 
@@ -144,7 +144,9 @@ This analysis focuses on identifying and documenting a potential DoS attack and 
   - The attacker (`192.168.56.1`) initiates a potential **SYN flood attack** (half-open attack) against the target (`192.168.56.102`).  
   - SYN packets are sent in rapid succession, overwhelming the target system with incomplete connection requests, a common tactic in DoS attacks.
 
-**Screenshot Placeholder**: SYN flood packets as displayed in Wireshark.  
+<img width="791" alt="Screenshot 2025-01-20 202931" src="https://github.com/user-attachments/assets/84a99887-6cf4-4640-b4fe-89058450c368" />
+
+SYN flood packets as displayed in Wireshark.  
 
 ---
 
@@ -157,7 +159,10 @@ This analysis focuses on identifying and documenting a potential DoS attack and 
     - **First 3**: `eeeeeeee`, `eeeeeeei`, `eeeeeeeo`  
     - **Last 3**: `eeeeeESU`, `eeeeeESm`, `eeeeeESM`
 
-**Screenshot Placeholder**: Brute-force password attempts shown in Wireshark.
+<img width="789" alt="Screenshot 2025-01-20 203053" src="https://github.com/user-attachments/assets/9c0c5c84-e629-4fb0-92a9-e0e5d85c6490" />
+<img width="790" alt="Screenshot 2025-01-20 203250" src="https://github.com/user-attachments/assets/1bc84ee5-cee0-456d-8073-4965ecae02c2" />
+
+Brute-force password attempts shown in Wireshark.
 
 ---
 
@@ -193,7 +198,7 @@ This analysis focuses on identifying and documenting a potential DoS attack and 
 ---
 
 ## **Conclusion**  
-This analysis highlights the significance of robust defenses against DoS and brute-force attacks, including preventive measures such as rate limiting, password policy enforcement, and multi-factor authentication.  
+This analysis shows the significance of strong defenses against DoS and brute-force attacks, including preventive measures such as rate limiting, password policy enforcement, and multi-factor authentication.  
 
-**Screenshot Placeholder**: Include relevant screenshots from Wireshark showing the SYN flood and brute-force patterns.  
+ 
 
